@@ -29,10 +29,6 @@ color:#f4b500;
 	border-radius: 10px;
 
 }
-
-
-
-
 /*body {
     background: white url("images/images.jpeg") no-repeat right bottom;font-family: "Times New Roman";
 text-decoration: line-through;
@@ -42,3 +38,7 @@ text-decoration: line-through;
 	background: white url("images/images.jpeg") ;
 
 }*/
+
+.navactive{
+    a.current { color: red; }
+}

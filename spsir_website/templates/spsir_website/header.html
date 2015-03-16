@@ -1,0 +1,57 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'spsir_website/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'spsir_website/style.css' %}" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shaligram Prajapat Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript">
+  //var v = window.location.href;
+  //window.alert(v);
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body><!-- style=" background-color:#FFF6D9 ;"-->
+<div class="jumbotron">
+  <div class="col-md-10 col-md-offset-1" style="background-color:#FFFFFF  ;border-radius: 5px; "><!-- 398DC6  -->
+    <div class="container" class="col-md-12">
+      <h3>Shaligram Prajapat</h3>
+      <h5>Associate Professor </h5>  
+      <nav class="navbar navbar-inverse" style="background-color:#929292; "><!-- 004E7F-->
+          <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">button
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+              <a class="navbar-brand" href="/">Shaligram Prajapat</a>
+            </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/">Home</a></li>
+                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/cv/">CV</a></li>
+                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/education/" class="navactive">Education</a></li>
+                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/teaching/" class="navactive">Teaching</a></li>
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/research/" class="navactive">Research <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/research">Research</a></li>
+                    <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/research/publications" class="navactive">Publication</a></li>
+                  </ul>
+                </li>
+                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/memberships/" class="navactive">Memberships</a></li>
+                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/contactMe/" class="navactive">Contact me</a></li>
+            </ul>
+        
+          </div><!-- Navbar collapse-->
+          </div><!-- Container Fluid-->
+      </nav>  
+      </div>
+      </div>
+      <br><br>
