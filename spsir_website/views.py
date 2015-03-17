@@ -13,8 +13,9 @@ def profile(request):
 def cv(request):
 	return render(request, 'spsir_website/cv.html')
 
-def home(request):
-	return render(request,"spsir_website/index.html")
+
+def dc_iips(request):
+	return render(request,"spsir_website/dc_iips.html")
 def home(request):
 	return render(request,"spsir_website/index.html")
 def home(request):
@@ -28,8 +29,8 @@ def home(request):
 def contactMe(request):
 	return render(request, 'spsir_website/contactMe.html')		
 
-def memberships(request):
-	return render(request, 'spsir_website/memberships.html')	
+def Miscellaneous(request):
+	return render(request, 'spsir_website/Miscellaneous.html')	
 
 def teaching(request):
 	return render(request, 'spsir_website/teaching.html')	

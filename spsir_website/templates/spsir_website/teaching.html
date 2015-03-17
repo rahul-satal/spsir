@@ -1,55 +1,71 @@
 {% load staticfiles %}
-<div>
-{% include "webpage/header.html" %} 
-</div>
-<div class="jumbotron" >
-<div class="col-md-10 col-md-offset-1 midDiv" >  
-<div name="teaching"><br>
-<h2><u>Teaching</u></h2>
-		<br><br>
-<ul>
-	<li>Working as a Incharge Principal ,S.P. College and Head, MCA Department, P.R.Patil Group of Educational Institutes, Amrvavati from 23’rd August 2011 to Till Date.</li>
-	<li>Worked as a Professor, Symbiosis Institute of Computer Studies and Research, Pune, From 22’nd July 2010 to 15’th April 2011.</li>
-	<li>Worked as Associate Professor (Sel.Grade), P.G.Deptt. Of Computer Science and Technology, H.V.P.Mandal, Amravati 444605. From 2’nd February 2007 to 17’th July 2010.</li>
-	<li>Worked as Sr. Lecturer, P.G.Deptt. Of Computer Science and Technology, H.V.P.Mandal, Amravati 444605. From June 2004 to July 2007.</li>
-	<li>Worked as a full time lecturer, P.G.Deptt. of Computer Science and Technology, H.V.P.Mandal, Amravati 444605. From July 1996 to May 2005.</li>
-	<li>Worked as a full time lecturer (Adhoc), P.G.Deptt. of Computer Science and Technology, H.V.P.Mandal, Amravati 444605. In the session 1995-96.</li>
-	<li> Worked as a Visiting Lecturer, P.G.Deptt. Of Computer Science and Technology, Amravati University, Amravati 444602. From August 1994 to June 1995.</li>
 
-</ul>
+<link rel="stylesheet" type="text/css" href="{% static 'spsir_website/bootstrap.min.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'spsir_website/style.css' %}" />
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Shaligram Prajapat Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</head>
 
-</div>
-Subpages:-(1)
-<a href="/webpage/subjectsThought">Subjects Thought</a>
+<body><!-- style=" background-color:#FFF6D9 ;"-->
+<div class="jumbotron">
+  <div class="col-md-10 col-md-offset-1" style="background-color:#FFFFFF  ;border-radius: 5px; "><!-- 398DC6  -->
+    <div class="container" class="col-md-12">
+      <h3>Shaligram Prajapat</h3>
+      <h5>Associate Professor </h5>  
+      <nav class="navbar navbar-inverse" style="background-color:#929292; "><!-- 004E7F-->
+          <div class="container-fluid">
+          <div class="navbar-header">
+                <a class="navbar-brand" href="/">Shaligram Prajapat</a></div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                    <li><a href="/">Profile</a></li>
 
-<div class="row">
-<hr>
-<div class="col-sm-11">
-<a href="https://docs.google.com/viewer?a=v&pid=
-	sites&srcid=ZGVmYXVsdGRvbWFpbnxkcmN
-	oaXRyYWRoYXdhbGV8Z3g6MjRhYmQyYWFlNGI0YjNhOQ" target="_blank">proposal_for_guest_lectures-workshops-4.docx
-(17k)</div>
-<div class="col-sm-1 "></div><span class="glyphicon glyphicon-download-alt"></span> Download
-<hr></a>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-10 col-md-offset-1 footer"  style=" margin: 1% 10% 1%; width:80%">
-      <div>{% include "webpage/footer.html" %}</div>
-  </div>
+                    <li><a href="/spsir_website/cv/">CV</a></li>
 
+                    <li><a href="/spsir_website/teaching/" class="navactive">Teaching <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                                 <li><a href="/spsir_website/research">Academic and Industry Projects</a></li>
+                                  <li><a href="/spsir_website/research">M.Tech. (IT) -Project@VI Semester</a></li>
+                                  <li><a href="/spsir_website/research">Teaching-DNA-(IT-504)</a></li>
+                                  <li><a href="/spsir_website/research">Teaching-Computer Graphics-IC-503</a></li>
+                                  <li><a href="/spsir_website/research">Research in Computing</a></li>
+                                  <li><a href="/spsir_website/research">Analysis and Design of Algorithms</a></li>
+                                  <li><a href="/spsir_website/research/publications" class="navactive">DCO</a></li>
+                         </ul>
+                         </li>
 
+                    <li><a href="/spsir_website/teachers/" class="navactive">Teachers</a></li>
 
-     
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/research/" class="navactive">Recommendations 
+                         <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="/spsir_website/books/" class="navactive">Books</a></li>
+                             <li><a href="/spsir_website/research">Research</a></li>
+                             <li><a href="/spsir_website/research/publications" class="navactive">Publication</a></li>
+                         </ul>
+                        </li>
+                    <li><a href="/spsir_website/dc_iips" class="navactive">Development Center @ IIPS</a></li>
 
-    
-    
-
-    
-
-    
-
-    
-
-   
+                    <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/research/" class="navactive">Recommendations 
+                         <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                             <li><a href="/spsir_website/books/" class="navactive">Books</a></li>
+                             <li><a href="/spsir_website/research">Research</a></li>
+                             <li><a href="/spsir_website/research/publications" class="navactive">Publication</a></li>
+                         </ul>
+                         </li>
+            </ul>
+        
+          </div><!-- Navbar collapse-->
+          </div><!-- Container Fluid-->
+      </nav>  
+      </div>
+      </div>
+      <br><br>

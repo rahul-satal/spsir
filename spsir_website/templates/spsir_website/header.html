@@ -5,15 +5,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shaligram Prajapat Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript">
-  //var v = window.location.href;
-  //window.alert(v);
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<title>Shaligram Prajapat Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.nav_data {
+    margin-left: -5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 
 <body><!-- style=" background-color:#FFF6D9 ;"-->
@@ -23,30 +24,60 @@
       <h3>Shaligram Prajapat</h3>
       <h5>Associate Professor </h5>  
       <nav class="navbar navbar-inverse" style="background-color:#929292; "><!-- 004E7F-->
-          <div class="container-fluid">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">button
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-            </button>
-              <a class="navbar-brand" href="/">Shaligram Prajapat</a>
-            </div>
+          <div class="container-fluid" style="margin-left:-20 ;  margin-right: -20px;">
+          
+            
+            
           <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/">Home</a></li>
-                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/cv/">CV</a></li>
-                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/education/" class="navactive">Education</a></li>
-                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/teaching/" class="navactive">Teaching</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/research/" class="navactive">Research <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                  <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/research">Research</a></li>
-                    <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/research/publications" class="navactive">Publication</a></li>
+                
+                <li class= "nav_data"><a href="/">Welcome</a></li>
+                <li class= "nav_data"><a href="/">Profile</a></li>
+                <li class= "nav_data"><a href="/spsir_website/cv/">CV</a></li>
+
+
+
+                <li class="dropdown nav_data">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/teaching/" class="navactive">Teaching
+                    <!--<span class="caret"></span>--></a>
+                    <ul class="dropdown-menu">
+                         <li><a href="/spsir_website/research/project">Academic and Industry Projects</a></li>
+                                  <li><a href="/spsir_website/teaching/sem_project">M.Tech. (IT) -Project@VI Semester</a></li>
+                                  <li><a href="/spsir_website/teaching/dna">Teaching-DNA-(IT-504)</a></li>
+                                  <li><a href="/spsir_website/teaching/cg">Teaching-Computer Graphics-IC-503</a></li>
+                                  <li><a href="/spsir_website/teaching/rc">Research in Computing</a></li>
+                                  <li><a href="/spsir_website/teaching/ada">Analysis and Design of Algorithms</a></li>
+                                  <li><a href="/spsir_website/teaching/dco" class="navactive">DCO</a></li>
                   </ul>
                 </li>
-                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/memberships/" class="navactive">Memberships</a></li>
-                <li class="<%= 'active' if params[:controller] == 'controller1' %>"><a href="/spsir_website/contactMe/" class="navactive">Contact me</a></li>
+
+
+
+                
+                <li class= "nav_data"><a href="/spsir_website/education/" class="navactive">My Teachers</a></li>
+
+                  <li class="dropdown nav_data">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/recommendations/" class="navactive">Recommendations
+                    <!--<span class="caret"></span>-->
+                    <ul class="dropdown-menu">
+                          <li><a href="/spsir_website/recommendations/books" class="navactive">Books</a></li>
+                     </ul>
+                </li>
+
+                <li class= "nav_data"><a href="/spsir_website/dc_iips" class="navactive">Development Center @ IIPS</a></li>
+                
+
+                                <li class="dropdown nav_data">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="/spsir_website/miscellaneous/" class="navactive">Miscellaneous
+                    <!--<span class="caret"></span>-->
+                    <ul class="dropdown-menu">
+                          <li><a href="/spsir_website/miscellaneous/my_students">My Students</a></li>
+                          <li><a href="/spsir_website/miscellaneous/spritual_gurus">Spritual Gurus</a></li>
+                          <li><a href="/spsir_website/miscellaneous/workshop">FDP/Workshops/Short Cources</a></li>
+                          <li><a href="/spsir_website/miscellaneous/my_friends">My Friends</a></li>
+                  </ul>
+                </li>
+                <li class= "nav_data"><a href="/spsir_website/contactMe/" class="navactive">Contact me</a></li>
             </ul>
         
           </div><!-- Navbar collapse-->
