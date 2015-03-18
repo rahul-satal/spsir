@@ -1,42 +1,76 @@
-<table style="border:1px solid black">
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-<tr>
-	<td>dfdf</td>
-	<td>dfdf</td>
-</tr>
-</table>	
+{% load staticfiles %}
+<div>
+{% include "spsir_website/header.html" %} 
+</div>
+<style>
+table {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+</style>
+<div class="jumbotron" >
+<div class="col-md-10 col-md-offset-1 midDiv" >  
+<div name="profile">
+<h2><u>Profile</u></h2>
+<table class="table table-bordered">
+  <tr>
+    <th>Name</th>
+    <th>Shaligram Prajapat</th>
+  </tr>
+  <tr>
+    <td style="padding:5px;">Favourite screen name</td>
+    <td>S.P.Indore</td>
+  </tr>
+  <tr>
+    <td style="padding:5px;"> Religious views</td>
+    <td>Vedic /Sanatan   SP(IND)-1467</td>
+  </tr>
+  <tr>
+    <td>Relationship Status </td>
+    <td> Married </td>
+  </tr>
+   <tr>
+    <td>Ideal </td>
+    <td>Dr APJ Abdul Kalam </td>
+  </tr>
+   <tr>
+    <td>Favourite Movies</td>
+    <td> Sarfarosh, saudagar (old),Virasat</td>
+  </tr>
+   <tr>
+    <td>Music</td>
+    <td> Gazals by Jagjeet Singh ,Kishore Kumar</td>
+  </tr>
+   <tr>
+    <td>Books</td>
+    <td>Raag Darbari , Madhushala, A brief History of time </td>
+  </tr>
+   <tr>
+    <td> Professional  Membership</td>
+    <td>
+    	<ul>
+    		<li>M-ACM- 5005437(2012)</li>
+    		<li> M-IEEE- 90902442(2012)</li>
+    		<li>LM-CSI-01126988 (2011) </li>
+    		<li>LM-ISTE-45875 (2005),</li>
+    		<li> M-IAENG- 101331(2008)</li>
+    		<li>LM-Vigyan Bharti</li>
+    	</ul>
+    </td>
+  </tr>
+   <tr>
+    <td>Favorite actor (Hindi Movie)</td>
+    <td>Sanjeev Kumar, Big-B , Ajay Devgan, Aamir Khan, Abhishek Bachchan</td>
+  </tr>
+
+</table>
+</div>
+</div>
+</div>
+<div class="col-md-10 col-md-offset-1 footer"  style=" margin: 1% 10% 1%; width:80%">
+      <div>{% include "spsir_website/footer.html" %}</div>
+  </div>
+

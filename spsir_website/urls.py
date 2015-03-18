@@ -18,13 +18,30 @@ urlpatterns = patterns('',
     url(r'^spsir_website/journalPublications/$', views.journalPublications, name='journalPublications'),
     url(r'^spsir_website/nationalConferences/$', views.nationalConferences, name='nationalConferences'),
     url(r'^spsir_website/profile/$', views.profile, name='profile'),
-    url(r'^spsir_website/dc_iips/$', views.dc_iips, name='dc_iips'),
-    url(r'^spsir_website/footer/$', views.footer, name='footer'),
-    url(r'^spsir_website/footer/$', views.footer, name='footer'),
-    url(r'^spsir_website/footer/$', views.footer, name='footer'),
-    url(r'^spsir_website/footer/$', views.footer, name='footer'),
     
+    url(r'^spsir_website/research/project/$', views.project, name='project'),
+    url(r'^spsir_website/teaching/sem_project/$', views.sem_project, name='sem_project'),
+    url(r'^spsir_website/teaching/dna/$', views.dna, name='dna'),
+    url(r'^spsir_website/teaching/cg/$', views.cg, name='cg'),
+    url(r'^spsir_website/teaching/r_in_c/$', views.r_in_c, name='r_in_c'),
+    url(r'^spsir_website/teaching/ada/$', views.ada, name='ada'),
+    url(r'^spsir_website/teaching/dco/$', views.dco, name='dco'),
 
+    url(r'^spsir_website/my_teachers/$', views.my_teachers, name='my_teachers'),
+
+    url(r'^spsir_website/recommendations/$', views.recommendations, name='recommendations'),
+    url(r'^spsir_website/recommendations/books/$', views.books, name='books'),
+    
+    url(r'^spsir_website/dc_iips/$', views.dc_iips, name='dc_iips'),
+
+    url(r'^spsir_website/miscellaneous/my_students/$', views.footer, name='footer'),
+    url(r'^spsir_website/miscellaneous/spritual_gurus/$', views.footer, name='footer'),
+    url(r'^spsir_website/miscellaneous/workshop/$', views.footer, name='footer'),
+    url(r'^spsir_website/miscellaneous/my_friends/$', views.footer, name='footer'),
+                           
+
+
+      
     
     
   

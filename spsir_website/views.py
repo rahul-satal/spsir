@@ -5,7 +5,6 @@ from django.shortcuts import render_to_response
 
 def home(request):
 	return render(request,"spsir_website/index.html")
-
 def index(request):
 	return render(request, 'spsir_website/index.html')
 def profile(request):
@@ -14,16 +13,35 @@ def cv(request):
 	return render(request, 'spsir_website/cv.html')
 
 
+def teaching(request):
+	return render(request, 'spsir_website/teaching.html')	
 def dc_iips(request):
 	return render(request,"spsir_website/dc_iips.html")
-def home(request):
-	return render(request,"spsir_website/index.html")
-def home(request):
-	return render(request,"spsir_website/index.html")
-def home(request):
-	return render(request,"spsir_website/index.html")
-def home(request):
-	return render(request,"spsir_website/index.html")
+def ada(request):
+	return render(request,"spsir_website/teaching/ada.html")
+def cg(request):
+	return render(request,"spsir_website/teaching/cg.html")
+def dco(request):
+	return render(request,"spsir_website/teaching/dco.html")
+def dna(request):
+	return render(request,"spsir_website/teaching/dna.html")
+def project(request):
+	return render(request,"spsir_website/teaching/project.html")
+def sem_project(request):
+	return render(request,"spsir_website/teaching/sem_project.html")
+def r_in_c(request):
+	return render(request,"spsir_website/teaching/r_in_c.html")
+
+def my_teachers(request):
+	return render(request, 'spsir_website/my_teachers.html')
+def recommendations(request):
+	return render(request, 'spsir_website/recommendations.html')
+def books(request):
+	return render(request, 'spsir_website/recommendations/books.html')
+	
+def dc_iips(request):
+	return render(request, 'spsir_website/dc_iips.html')				
+	
 						
 
 def contactMe(request):
@@ -31,9 +49,18 @@ def contactMe(request):
 
 def Miscellaneous(request):
 	return render(request, 'spsir_website/Miscellaneous.html')	
+def my_students(request):
+	return render(request,"spsir_website/miscellaneous/my_students.html")
+def spritual_gurus(request):
+	return render(request,"spsir_website/miscellaneous/spritual_gurus.html")
+def workshop(request):
+	return render(request,"spsir_website/miscellaneous/workshop.html")
+def my_friends(request):
+	return render(request,"spsir_website/miscellaneous/my_friends.html")	
 
-def teaching(request):
-	return render(request, 'spsir_website/teaching.html')	
+
+
+
 
 def education(request):
 	return render(request, 'spsir_website/education.html')	
