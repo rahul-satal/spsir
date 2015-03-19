@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 #from spsir_website.models import profilePic
 from django.shortcuts import render_to_response
+from spsir_website.models import MyTeacher
 
 def home(request):
 	return render(request,"spsir_website/index.html")
@@ -38,6 +39,8 @@ def recommendations(request):
 	return render(request, 'spsir_website/recommendations.html')
 def books(request):
 	return render(request, 'spsir_website/recommendations/books.html')
+def ecc(request):
+	return render(request, 'spsir_website/recommendations/ecc.html')	
 	
 def dc_iips(request):
 	return render(request, 'spsir_website/dc_iips.html')				

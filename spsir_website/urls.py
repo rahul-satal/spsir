@@ -31,7 +31,9 @@ urlpatterns = patterns('',
 
     url(r'^spsir_website/recommendations/$', views.recommendations, name='recommendations'),
     url(r'^spsir_website/recommendations/books/$', views.books, name='books'),
+    url(r'^spsir_website/recommendations/ecc/$', views.ecc, name='ecc'),
     
+
     url(r'^spsir_website/dc_iips/$', views.dc_iips, name='dc_iips'),
 
     url(r'^spsir_website/miscellaneous/my_students/$', views.footer, name='footer'),

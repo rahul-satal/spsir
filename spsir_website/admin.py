@@ -1,3 +1,4 @@
 from django.contrib import admin
+from spsir_website.models import MyTeacher
 
-# Register your models here.
+admin.site.register(MyTeacher)
