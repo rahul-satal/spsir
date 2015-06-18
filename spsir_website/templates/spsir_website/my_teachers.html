@@ -6,19 +6,19 @@
 <div class="jumbotron" >
 <div class="col-md-10 col-md-offset-1 midDiv" > 
 <div name="my_teachers"><br>
+
 	<h2><u>My Teachers</u></h2><br><br>
-	<div name="list" style="padding-left:30%; padding-right:30%">
+	<div name="list" style="padding-left:5%; padding-right:30%">
 	<ul><b>
-		<li class="teacher_li">My Parents</li>
-		<li>Prof. VENKATARAMAN K (KVR) Sir</li>
-		<li>Prof. Dr. R. Thakur Sir</li>
-		<li>Prof. N.K.Naik Sir</li>
-		<li>Shri Yogendra Trivedi Sir (Y.T. Sir)</li>
-		<li>Er. Jayant Sharma Sir</li>
-		<li>Prof. Aswini Sharma Sir</li>
-		<li>Shri Sukhdev Bangar Sir</li>
-		<li>Pt. Kailash Chandra Sharma</li>
-		<li>.....and all my students.</li>
+		{% if teacher_list %}
+   			 {% for q in teacher_list %}
+		<li>{{ q.teacher_name }}</li>
+		
+   			 {% endfor %}
+         {% endif %}
+				<li>.....and all my students.</li>
+
+
 	</ul></b>
 	</div>
 	</div></div></div>

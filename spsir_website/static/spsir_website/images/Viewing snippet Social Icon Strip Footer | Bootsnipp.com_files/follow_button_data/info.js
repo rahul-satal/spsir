@@ -1,0 +1,1 @@
+/**/__twttr.setFollowersCountAndFollowing([{"following":false,"id":"786331568","screen_name":"BootSnipp","name":"BootSnipp.com","protected":false,"followers_count":8923,"formatted_followers_count":"8,923 followers","age_gated":false}]);

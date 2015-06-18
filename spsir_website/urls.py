@@ -36,10 +36,10 @@ urlpatterns = patterns('',
 
     url(r'^spsir_website/dc_iips/$', views.dc_iips, name='dc_iips'),
 
-    url(r'^spsir_website/miscellaneous/my_students/$', views.footer, name='footer'),
-    url(r'^spsir_website/miscellaneous/spritual_gurus/$', views.footer, name='footer'),
-    url(r'^spsir_website/miscellaneous/workshop/$', views.footer, name='footer'),
-    url(r'^spsir_website/miscellaneous/my_friends/$', views.footer, name='footer'),
+    url(r'^spsir_website/miscellaneous/my_students/$', views.my_students, name='my_students'),
+    url(r'^spsir_website/miscellaneous/spritual_gurus/$', views.spritual_gurus, name='spritual_gurus'),
+    url(r'^spsir_website/miscellaneous/workshop/$', views.workshop, name='workshop'),
+    url(r'^spsir_website/miscellaneous/my_friends/$', views.my_friends, name='my_friends'),
                            
 
 

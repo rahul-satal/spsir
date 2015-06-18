@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 #from spsir_website.models import profilePic
 from django.shortcuts import render_to_response
-from spsir_website.models import MyTeacher
+from spsir_website.models import *
 
 def home(request):
 	return render(request,"spsir_website/index.html")
@@ -34,7 +34,10 @@ def r_in_c(request):
 	return render(request,"spsir_website/teaching/r_in_c.html")
 
 def my_teachers(request):
-	return render(request, 'spsir_website/my_teachers.html')
+	teacher_list = MyTeacher.objects.all()
+	context = {'teacher_list':teacher_list }
+	return render(request, 'spsir_website/my_teachers.html', context)
+
 def recommendations(request):
 	return render(request, 'spsir_website/recommendations.html')
 def books(request):
@@ -53,7 +56,9 @@ def contactMe(request):
 def Miscellaneous(request):
 	return render(request, 'spsir_website/Miscellaneous.html')	
 def my_students(request):
-	return render(request,"spsir_website/miscellaneous/my_students.html")
+	student_list = MyStudent.objects.all()
+	context = {'student_list':student_list }
+	return render(request,"spsir_website/miscellaneous/my_students.html", context)
 def spritual_gurus(request):
 	return render(request,"spsir_website/miscellaneous/spritual_gurus.html")
 def workshop(request):
