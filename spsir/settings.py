@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'spsir_website',
    # 'twitter_bootstrap',
+    'favicon',
 )
 
 MIDDLEWARE_CLASSES = (

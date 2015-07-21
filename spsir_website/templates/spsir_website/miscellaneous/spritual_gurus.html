@@ -2,19 +2,28 @@
 <div>
 {% include "spsir_website/header.html" %} 
 </div>
+
 <div class="jumbotron" >
 <div class="col-md-10 col-md-offset-1 midDiv" > 
-<div name="cv"><br>
-	<h2><u>Contact</u></h2>
+<div name="my_teachers"><br>
+
+	<h2><u>My Spritual Gurus</u></h2><br><br>
+	<div name="list" style="padding-left:5%; padding-right:30%">
+	<ul><b>
+		{% if gurus_list %}
+   			 {% for q in gurus_list %}
+
+				<li>{{ q.SpritualGuru_name }}</li>
+		
+   			 {% endfor %}
+         {% endif %}
 
 
+	</ul></b>
+	</div>
+	</div></div></div>
 
-
-
-
-	
-			
 </div></div></div>	
 <div class="col-md-10 col-md-offset-1 footer"  style=" margin: 1% 10% 1%; width:80%">
       <div>{% include "spsir_website/footer.html" %}</div>
-  </div>	
+  </div>

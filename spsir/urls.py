@@ -4,4 +4,5 @@ from django.contrib import admin
 urlpatterns = patterns('',
 	url(r'^', include('spsir_website.urls')),
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^', include('favicon.urls')),
 )

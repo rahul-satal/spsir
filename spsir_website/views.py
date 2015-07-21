@@ -59,10 +59,17 @@ def my_students(request):
 	student_list = MyStudent.objects.all()
 	context = {'student_list':student_list }
 	return render(request,"spsir_website/miscellaneous/my_students.html", context)
+
 def spritual_gurus(request):
-	return render(request,"spsir_website/miscellaneous/spritual_gurus.html")
+	gurus_list = SpritualGuru.objects.all()
+	context = {'gurus_list':gurus_list }
+	return render(request,"spsir_website/miscellaneous/spritual_gurus.html",context)
+
 def workshop(request):
-	return render(request,"spsir_website/miscellaneous/workshop.html")
+	workshop_list = Workshop.objects.all()
+	context = {'workshop_list':workshop_list }
+	return render(request,"spsir_website/miscellaneous/workshop.html",context)
+
 def my_friends(request):
 	return render(request,"spsir_website/miscellaneous/my_friends.html")	
 
